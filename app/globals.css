@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +24,73 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}  */
+
+
+/* Navbar Styles */
+.navbar {
+  height: 80px;
+  width: 100%;
+  border-bottom: 2px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li:hover {
+  color: #000000; /* Green color on hover */
+}
+
+.navbar .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .user-info p {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navbar .user-info p:hover {
+  color: #000000; /* Green color on hover */
+}
+
+/* Button Styles */
+.nav-button,
+.login-button,
+.signup-button {
+  border: none;
+  background-color: #000000; /* Green color for buttons */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover,
+.login-button:hover,
+.signup-button:hover {
+  background-color: #000000; /* Slightly darker green on hover */
+}
+
+/* Additional styling for buttons */
+.login-button,
+.signup-button {
+  margin-right: 10px; /* Adjust the spacing between buttons */
 }
