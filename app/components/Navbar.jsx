@@ -38,11 +38,7 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            {/* <li className="mr-3">
-              <Link href="/signup">
-                <button className="nav-button">Signup</button>
-              </Link>
-            </li> */}
+
             <button className="nav-button" onClick={googleSignIn}>
               Login
             </button>

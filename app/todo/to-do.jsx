@@ -28,3 +28,7 @@ const Todo = ({ task, toggleComplete, deleteTask }) => {
 };
 
 export default Todo;
+
+
+
+

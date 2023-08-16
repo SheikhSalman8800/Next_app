@@ -8,7 +8,7 @@ import {
   GoogleAuthProvider,
 } from 'firebase/auth';
 
-export const AuthContext = createContext(); // Export the context
+export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -37,5 +37,6 @@ export const AuthContextProvider = ({ children }) => {
 };
 
 export const useAuth = () => {
-  return useContext(AuthContext); // Custom hook to use the context
+  return useContext(AuthContext);
 };
+
