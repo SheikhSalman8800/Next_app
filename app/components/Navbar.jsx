@@ -8,7 +8,7 @@ const Navbar = () => {
   const handleSignOut = async () => {
     try {
       await logOut();
-      window.location.href = '/'; // Redirect to the home page after signing out
+      window.location.href = '/'; 
     } catch (error) {
       console.log(error);
     }
