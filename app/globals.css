@@ -16,7 +16,18 @@
   }
 }
 
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}  */
 
+
+/* Navbar Styles */
 .navbar {
   height: 80px;
   width: 100%;
@@ -43,7 +54,7 @@
 
 .navbar ul li:hover {
   color: #000000; 
-
+}
 
 .navbar .user-info {
   display: flex;
@@ -64,7 +75,7 @@
 .login-button,
 .signup-button {
   border: none;
-  background-color: #000000;
+  background-color: #000000; 
   color: white;
   padding: 8px 16px;
   border-radius: 4px;
