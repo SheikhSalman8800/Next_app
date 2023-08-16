@@ -8,43 +8,43 @@ const Navbar = () => {
   const handleSignOut = async () => {
     try {
       await logOut();
-      window.location.href = '/'; 
+      window.location.href = '/'; // Redirect to the home page after signing out
     } catch (error) {
       console.log(error);
     }
   };
 
   return (
-    <div className="navbar flex justify-between items-center">
-      <ul className="flex items-center">
-        <li className="mr-3">
-          <Link href="/">
-            <button className="nav-button">Home</button>
-          </Link>
+    <div className="navbar">
+      <ul>
+        <li className="mr-5">
+          <button className="nav-button">
+            <Link href="/">Home</Link>
+          </button>
         </li>
-        <li className="mr-3">
-          <Link href="/todo">
-            <button className="nav-button">To-Do APP</button>
-          </Link>
-        </li>
-      </ul>
-      <div className="user-info flex items-center">
-        {user ? (
-          <>
-            <p className="mr-3">Welcome, {user.displayName}</p>
-            <button className="nav-button" onClick={handleSignOut}>
-              Sign Out
-            </button>
-          </>
-        ) : (
-          <>
-
-            <button className="nav-button" onClick={googleSignIn}>
-              Login
-            </button>
-          </>
+        {user && (
+          <li className="mr-5">
+            <Link href="/todo">
+              <button className="nav-button">To-Do App</button>
+            </Link>
+          </li>
         )}
-      </div>
+      </ul>
+      {user ? (
+        <div className="user-info">
+          <p>Welcome, {user.displayName}</p>
+          <button className="nav-button" onClick={handleSignOut}>
+            Sign out
+          </button>
+        </div>
+      ) : (
+        <div className="user-info">
+          <button className="nav-button" onClick={googleSignIn}>
+            Login
+          </button>
+          
+        </div>
+      )}
     </div>
   );
 };
