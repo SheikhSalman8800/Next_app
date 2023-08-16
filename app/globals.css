@@ -16,18 +16,7 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}  */
 
-
-/* Navbar Styles */
 .navbar {
   height: 80px;
   width: 100%;
@@ -53,8 +42,8 @@
 }
 
 .navbar ul li:hover {
-  color: #000000; /* Green color on hover */
-}
+  color: #000000; 
+
 
 .navbar .user-info {
   display: flex;
@@ -67,15 +56,15 @@
 }
 
 .navbar .user-info p:hover {
-  color: #000000; /* Green color on hover */
+  color: #000000; 
 }
 
-/* Button Styles */
+
 .nav-button,
 .login-button,
 .signup-button {
   border: none;
-  background-color: #000000; /* Green color for buttons */
+  background-color: #000000;
   color: white;
   padding: 8px 16px;
   border-radius: 4px;
@@ -86,11 +75,11 @@
 .nav-button:hover,
 .login-button:hover,
 .signup-button:hover {
-  background-color: #000000; /* Slightly darker green on hover */
+  background-color: #000000; 
 }
 
-/* Additional styling for buttons */
+
 .login-button,
 .signup-button {
-  margin-right: 10px; /* Adjust the spacing between buttons */
+  margin-right: 10px; 
 }
